@@ -1,0 +1,16 @@
+# Environment & credentials
+.env
+.env.*
+!.env.example
+
+# Database dumps (may contain personal or sensitive data)
+*.sql.gz
+backup/
+
+# IDE
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
