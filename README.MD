@@ -44,7 +44,7 @@ This project is also part of my learning journey toward Database Administrator (
 
 ## Entity Relationship Diagram
 
-https://github.com/bayhaqibnu8/spotify-database-design-clone/blob/22d2f092b0a273edc53714c306c719d7f8b148e8/docs/ERD.png
+![image_alt](https://github.com/bayhaqibnu8/spotify-database-design-clone/blob/22d2f092b0a273edc53714c306c719d7f8b148e8/docs/ERD.png)
 
 ## Technologies
 
