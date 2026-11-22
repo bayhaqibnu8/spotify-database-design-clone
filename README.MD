@@ -52,6 +52,7 @@ This project is also part of my learning journey toward Database Administrator (
 - SQL
 - PlantUML
 - DataGrip
+- WebStorm
 
 ## Project Progress
 
