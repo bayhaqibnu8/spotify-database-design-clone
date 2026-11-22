@@ -1,4 +1,4 @@
-# Spotify Database Design — MySQL
+# Spotify Database Design Clone
 
 ## Overview
 
