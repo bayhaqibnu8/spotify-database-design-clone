@@ -1,4 +1,4 @@
-![image_alt](https://github.com/bayhaqibnu8/spotify-database-design-clone/blob/04c02a72400f31be258d2028160ccfe38c3b03fe/spo4.png)
+![image_alt](https://github.com/bayhaqibnu8/spotify-database-design-clone/blob/68460aa0c04ac637cce325b689b74f0b3706a6ec/spo5.png)
 # Spotify Database Design Clone
 
 ## Overview
