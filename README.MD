@@ -78,10 +78,10 @@ spotify-database-design/
 ├── docs/
 │   └── erd.png
 ├── sql/
-│   |── 01_core_tables.sql
-│   |── 02_pivot_tables.sql
-│   |── 03_input_dummy_data.sql
-│   |── 04_data_integrity_validation.sql
+│   ├── 01_core_tables.sql
+│   ├── 02_pivot_tables.sql
+│   ├── 03_input_dummy_data.sql
+│   ├── 04_data_integrity_validation.sql
 │
 ├── README.md
 └── spotify_logo.png
