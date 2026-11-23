@@ -75,13 +75,17 @@ This project is also part of my learning journey toward Database Administrator (
 
 ```text
 spotify-database-design/
-├── README.md
 ├── docs/
 │   └── erd.png
-└── sql/
-    ├── 01_create_database.sql
-    ├── 02_create_core_tables.sql
-    └── 03_create_pivot_tables.sql
+├── sql/
+│   |── 01_core_tables.sql
+│   |── 02_pivot_tables.sql
+│   |── 03_input_dummy_data.sql
+│   |── 04_data_integrity_validation.sql
+│
+├── README.md
+└── spotify_logo.png
+
 ```
 
 ## Learning Goals
