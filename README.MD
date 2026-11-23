@@ -1,3 +1,4 @@
+![image_alt](https://github.com/bayhaqibnu8/spotify-database-design-clone/blob/c6e169189d4d46c6881070063cf52c98c7a7f2a8/spo2-removebg-preview.png)
 # Spotify Database Design Clone
 
 ## Overview
