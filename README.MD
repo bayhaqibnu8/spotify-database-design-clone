@@ -31,7 +31,7 @@ This project is also part of my learning journey toward Database Administrator (
 - episode
 - concert
 
-### Pivot Tables (9)
+### Pivot Tables (7)
 
 - artist_album
 - artist_song
