@@ -62,7 +62,7 @@ This project is also part of my learning journey toward Database Administrator (
 - [x] ERD design
 - [x] Core table implementation
 - [x] Pivot table implementation
-- [ ] Dummy data population
+- [x] Dummy data population
 - [ ] Data integrity validation
 - [ ] SQL query practice
 - [ ] Indexing and query optimization
