@@ -1,0 +1,140 @@
+@startuml
+
+entity artist {
+    * id : VARCHAR <<PK>>
+    --
+    * name : VARCHAR
+    instagram : VARCHAR
+    facebook : VARCHAR
+    twitter : VARCHAR
+    wikipedia : VARCHAR
+    bio : TEXT
+}
+
+entity album {
+    * id : VARCHAR <<PK>>
+    --
+    * title : VARCHAR
+    * release_at : YEAR
+    * image : VARCHAR
+    ' relation to artist, song (M:N)
+}
+
+entity song {
+    * id : VARCHAR <<PK>>
+    --
+    * album_id : VARCHAR <<FK>>
+    * title : VARCHAR
+    * duration : INT
+    ' relation to playlist, album, artist, user (M:N)
+    ' relation to album (N:1)
+}
+
+entity playlist_category {
+    * id : VARCHAR <<PK>>
+    --
+    * name : VARCHAR
+    * image : VARCHAR
+    * icon : VARCHAR
+    ' relation to playlist (1:N)
+}
+
+entity playlist {
+    * id : VARCHAR <<PK>>
+    --
+    playlist_category_id : VARCHAR <<FK>>
+    * user_id : VARCHAR <<FK>>
+    * name : VARCHAR
+    description: TEXT
+    image : VARCHAR
+    ' relation to song, playlist_cat, user (M:N)
+}
+
+entity podcast_category {
+    * id : VARCHAR <<PK>>
+    --
+    * name : VARCHAR
+    * image : VARCHAR
+    * icon : VARCHAR
+    ' relation to podcast (1:N)
+}
+
+entity podcast {
+    * id : VARCHAR <<PK>>
+    --
+    podcast_category_id : VARCHAR <<FK>>
+    * user_id : VARCHAR <<FK>>
+    * name : VARCHAR
+    image : VARCHAR
+    about : TEXT
+    ' relation to podcast_cat, user (N:1)
+    ' relation to episode (1:N)
+}
+
+entity episode {
+    * id : VARCHAR <<PK>>
+    --
+    * podcast_id : VARCHAR <<FK>>
+    * title : VARCHAR
+    description : TEXT
+    * published_at : DATE
+    * duration : INT
+    * image : VARCHAR
+    ' relation to podcast (N:1)
+}
+
+entity user {
+    * id : VARCHAR <<PK>>
+    --
+    * email : VARCHAR
+    * name : VARCHAR
+    birthday : DATE
+    ' relation to playlist(create), podcast (1:N)
+    ' relation to playlist(follow), artist, song (M:N)
+}
+
+entity concert {
+    * id : VARCHAR <<PK>>
+    --
+    * location : VARCHAR
+    * event_at : DATETIME
+    * url : VARCHAR
+    lon : DOUBLE
+    lat : DOUBLE
+    ' relation to artist (M:N)
+}
+
+' RELATIONSHIP
+
+' relation album
+artist }|--|{ album : Has
+
+' relation song
+album ||--|{ song : Contains
+artist }|--|{ song : Sing
+
+' relation playlist
+playlist_category |o--|{ playlist : Contains
+user ||--o{ playlist : Create
+playlist }o--o{ song : Contains
+
+' relation podcast
+podcast_category |o--|{ podcast : Contains
+user ||--o{ podcast : Create
+
+' relation episode
+podcast ||--o{ episode : Contains
+
+' relation concert
+artist }|--o{ concert : Perform
+
+' relation user following artist
+user }o--o{ artist : Folloq
+
+' relation user like song
+user }o--o{ song : Liked Song
+
+' relation follow playlist
+user }o--o{ playlist : Liked Playlist
+
+@enduml
