@@ -375,16 +375,3 @@ INSERT INTO artist_concert (artist_id, concert_id) VALUES
 ('AR-00008', 'CO-00008'),
 ('AR-00009', 'CO-00009');
 
-SELECT 'artist-album' AS table_name, COUNT(*) AS total_table FROM artist_album
-UNION ALL
-SELECT 'artist_song', COUNT(*) FROM artist_song
-UNION ALL
-SELECT 'playlist_song', COUNT(*) FROM playlist_song
-UNION ALL
-SELECT 'user_artist_follow', COUNT(*) FROM user_artist_follow
-UNION ALL
-SELECT 'user_song_like', COUNT(*) FROM user_song_like
-UNION ALL
-SELECT 'user_playlist_like', COUNT(*) FROM user_playlist_like
-UNION ALL
-SELECT 'artist_concert', COUNT(*) FROM artist_concert;
