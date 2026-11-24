@@ -118,7 +118,8 @@ Many-to-many relationships are implemented using pivot tables:
 ```text
 spotify-playlist-management-database/
 ├── docs/
-│   └── erd.png
+│   ├── erd.png
+│   └── erd.puml
 ├── sql/
 │   ├── 01_core_tables.sql
 │   ├── 02_pivot_tables.sql
