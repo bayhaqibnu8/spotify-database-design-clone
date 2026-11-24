@@ -41,7 +41,17 @@ This project is also part of my learning journey toward Database Administrator (
 - user_playlist_follow
 - artist_concert
 
-> Note: The pivot table list above is currently a placeholder to be updated with the complete implemented list.
+### Key Relationships
+- **One-to-Many (Core):**
+  - `album` → `song` (`album_id`)
+  - `podcast` → `episode` (`podcast_id`)
+  - `user` → `playlist` & `podcast` (`user_id`)
+  - `playlist_category` → `playlist` & `podcast_category` → `podcast` (opsional / `NULL` diizinkan)
+- **Many-to-Many (via Pivot Tables):**
+  - `artist` ↔ `album` (`artist_album`) & `artist` ↔ `song` (`artist_song`)
+  - `playlist` ↔ `song` (`playlist_song`)
+  - `user` ↔ `artist` (`user_artist_follow`), `user` ↔ `song` (`user_song_like`), `user` ↔ `playlist` (`user_playlist_like`)
+  - `artist` ↔ `concert` (`artist_concert`)
 
 ## Entity Relationship Diagram
 
