@@ -63,7 +63,7 @@ This project is also part of my learning journey toward Database Administrator (
 - [x] Core table implementation
 - [x] Pivot table implementation
 - [x] Dummy data population
-- [ ] Data integrity validation
+- [x] Data integrity validation
 - [ ] SQL query practice
 - [ ] Indexing and query optimization
 - [ ] Backup and recovery
