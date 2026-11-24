@@ -84,7 +84,7 @@ Many-to-many relationships are implemented using pivot tables:
 
 ## Entity Relationship Diagram
 
-![image_alt](https://github.com/bayhaqibnu8/spotify-database-design-clone/blob/96280bee8e075062826e7fddf52defea1891c1cd/docs/erd.png)
+![image_alt](https://github.com/bayhaqibnu8/spotify-database-design-clone/blob/af0627b70a04b6f14a96d41faa9e968b859ff4f7/docs/erd1.png)
 
 ## Project Workflow
 
