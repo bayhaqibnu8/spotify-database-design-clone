@@ -107,11 +107,6 @@ Many-to-many relationships are implemented using pivot tables:
 - [x] Dummy data population
 - [x] Data integration validation
 - [ ] SQL query practice
-- [ ] Indexing and query optimization
-- [ ] Backup and recovery
-- [ ] Database user privileges
-- [ ] Monitoring
-- [ ] Docker deployment
 
 ## Repository Structure
 
